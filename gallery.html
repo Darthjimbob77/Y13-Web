@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+
+<head>
+    <link rel="stylesheet" href="galleryStyles.css">
+    <script>
+        function thumbChange(num) {
+            var thumb = 'gallery' + num + '.png';
+            document.getElementById("mainImg").src = thumb;
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="main">
+        <img id="mainImg" src="gallery1.png">
+    </div>
+    <ul class="thumbs">
+        <li onclick="thumbChange(1)"><img src="gallery1.png"></li>
+        <li onclick="thumbChange(3)"><img src="gallery3.png"></li>
+        <li onclick="thumbChange(4)"><img src="gallery4.png"></li>
+        <li onclick="thumbChange(5)"><img src="gallery5.png"></li>
+    </ul>
+
+
+</body>

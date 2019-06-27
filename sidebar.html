@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet href="sidebar.css">
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!--    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>  open button code-->
+
+    <script>
+        function thumbChange(num) {
+            var thumb = 'gallery' + num + '.png';
+            document.getElementById("mainImg").src = thumb;
+        }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+
+    <div class="grid">
+        <div class="Header">Header</div>
+        <div class="Title">
+            <img src="title%20shape%20test.png">
+        </div>
+        <div class="Sidebar"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span></div>
+        <div class="Content">
+
+            <div class="main">
+                <img id="mainImg" src="gallery1.png">
+            </div>
+            <ul class="thumbs">
+                <li onclick="thumbChange(1)"><img src="gallery1.png"></li>
+                <li onclick="thumbChange(3)"><img src="gallery3.png"></li>
+                <li onclick="thumbChange(4)"><img src="gallery4.png"></li>
+                <li onclick="thumbChange(5)"><img src="gallery5.png"></li>
+            </ul>
+        </div>
+        <div class="Footer">Footer</div>
+
+    </div>
+
+
+</body>
+
+</html>

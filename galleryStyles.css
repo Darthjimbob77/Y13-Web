@@ -1,0 +1,44 @@
+html {
+    background-color: lightblue;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.main {
+    display: flex;
+    width 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: lightgray;
+    margin: auto;
+    box-shadow: 1px 1px 10px 5px gray;
+
+}
+
+.main img {
+    width: 50%;
+    margin: 2vh 25%;
+}
+
+.thumbs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbs li {
+    width: 15%;
+    padding: 10px;
+    background-color: lightskyblue;
+    margin: 1%;
+    box-shadow: 1px 1px 10px 5px gray;
+}
+
+.thumbs li img {
+    width: 100%;
+}
