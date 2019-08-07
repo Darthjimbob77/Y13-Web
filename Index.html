@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet href="styles.css">
+</head>
+
+<body>
+
+    <div id="Sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Index.html">Home</a>
+        <a href="BowTies.html">Bowties</a>
+        <a href="NeckTies.html">Neckties</a>
+        <a href="About.html">About</a>
+    </div>
+
+    <div class="grid">
+        <div class="Header">Header</div>
+        <div class="TitleMobile"> <img src= "logo%20comic.png">
+        </div>
+        <div class="Title">
+            <a href="Index.html" >Home</a>
+            <a href="BowTies.html">Bowties</a>
+            <a href="NeckTies.html">Neckties</a>
+            <a href="About.html">About</a>
+            <img src="logo%20comic.png" class="logo">
+        </div>
+        <div class="Sidebar"><span style="font-size:30px; cursor:pointer; color: goldenrod" class= "button" onclick="openNav()">&#9776;</span></div>
+        <div class="Footer">Footer</div>
+        <div class="Content">Content</div>
+
+    </div>
+
+    <script>
+        function thumbChange(num) {
+            var thumb = 'gallery' + num + 'png';
+            document.getElementById("mainImg").src = thumb;
+        }
+
+        function openNav() {
+            document.getElementById("Sidenav").style.width = "50%";
+        }
+
+        function closeNav() {
+            document.getElementById("Sidenav").style.width = "0";
+        }
+
+    </script>
+
+</body>
+
+</html>
